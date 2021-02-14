@@ -1,0 +1,95 @@
+ @font-face {
+ font-family: "LLG Type Regular";
+ src: url("/Polices/LLGType-Regular.ttf") format("ttf") }
+ 
+ 
+ 
+ /* Photo de fond */
+ body {
+background-image:url(Photos/image_de_fond.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+ /* Header (bandeau lien ref) */
+ul {
+	font-family: LLG Type Regular;
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1D3557;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 18pt 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #E63946;
+}
+
+
+
+
+/* Position du logo */
+#object-position-1 {
+	float: left;
+	margin-left: 20px;
+}
+
+
+
+/* Le X de couleur rouge  */
+#X {
+	color: red;
+}
+
+
+
+
+
+
+ /* BALISE H*/
+h1 {
+	float: left;
+	margin-left: 20px;
+	font-family: LLG Type Regular;
+	font-size: 20pt;
+	color: white;
+	padding:16px;
+	font-weight:bold; 
+ }
+
+
+/* Régler le saut de ligne correctement */
+br {
+ content: "";
+ display: block;
+ margin-bottom: 0px;
+}
+
+
+/* Le formulaire adapté aux marges */
+.element {
+ margin-top:80px;
+}
+

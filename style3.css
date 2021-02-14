@@ -1,0 +1,151 @@
+ @font-face {
+ font-family: "LLG Type Regular";
+ src: url("/Polices/LLGType-Regular.ttf") format("ttf") }
+
+
+
+ /* Header (bandeau lien ref) */
+ul {
+	font-family: LLG Type Regular;
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1D3557;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 18pt 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #E63946;
+}
+
+
+
+
+/* Position du logo */
+#object-position-1 {
+	float: left;
+	margin-left: 20px;
+}
+
+
+
+/* Le X de couleur rouge  */
+#X {
+	color: red;
+}
+
+
+/* Couleur du body */
+body {
+	margin-top: 80px;
+	background-color:#F1FAEE;
+}
+
+
+
+ /* BALISE H*/
+h1 {
+	float: left;
+	margin-left: 20px;
+	font-family: LLG Type Regular;
+	font-size: 20pt;
+	color: white;
+	padding:16px;
+	font-weight:bold; 
+ }
+
+
+/* Régler le saut de ligne correctement */
+br {
+ content: "";
+ display: block;
+ margin-bottom: 0px;
+}
+
+.br2 {
+ content: "";
+ display: block;
+ margin-bottom: 30px;
+}
+
+.br3 {
+ content: "";
+ display: block;
+ margin-bottom: 150px;
+}
+
+h2,h3 {
+	font-weight: bold;
+	font-size: 30px;
+  margin: 0 0 1em;
+  color: #345;
+  text-align: center;
+  font-family: LLG Type Regular;
+}
+
+
+.alignement {
+	padding:4px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border:1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.1);
+	box-shadow:0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+	float: left;
+	margin-right: 50px;
+	margin:5px 10px 15px
+}
+
+p {
+	margin-right: 20px;
+  font-family: LLG Type Regular;
+  text-align: justify;
+}
+
+q {
+	font-family: LLG Type Regular;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+

@@ -1,0 +1,185 @@
+ @font-face {
+ font-family: "LLG Type Regular";
+ src: url("/Polices/LLGType-Regular.ttf") format("ttf") }
+
+/* Couleur du body */
+body {
+	margin-top: 80px;
+	background-color:#F1FAEE;
+}
+
+ /* Header (bandeau lien ref) */
+ul {
+	font-family: LLG Type Regular;
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1D3557;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 18pt 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #E63946;
+}
+
+
+
+
+/* Position du logo */
+#object-position-1 {
+	float: left;
+	margin-left: 20px;
+}
+
+
+
+/* Le X de couleur rouge  */
+#X {
+	color: red;
+}
+
+
+
+
+
+
+ /* BALISE H*/
+h1 {
+	float: left;
+	margin-left: 20px;
+	font-family: LLG Type Regular;
+	font-size: 20pt;
+	color: white;
+	padding:16px;
+	font-weight:bold; 
+ }
+
+
+/* Régler le saut de ligne correctement */
+br {
+ content: "";
+ display: block;
+ margin-bottom: 0px;
+}
+
+.br2 {
+ content: "";
+ display: block;
+ margin-bottom: 10px;
+}
+
+
+
+/* Layout */
+
+.container {
+  display: grid;
+  grid-gap: .2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.container img {
+  max-width: 100%;
+  align-self: stretch;
+  justify-self: stretch;
+  object-fit: cover;
+}
+.portrait {
+  grid-row: auto / span 2;
+}
+.fit-left {
+  object-position: left;
+}
+.fit-right {
+  object-position: right;
+}
+
+
+/* Decoration */
+
+
+
+
+h2,h3 {
+  margin: 0 0 1em;
+  color: #345;
+  text-align: center;
+  font-family: LLG Type Regular;
+}
+p {
+	font-family: LLG Type Regular;
+	text-align: center;
+}
+
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #457B9D;
+}
+
+.container2:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+	font-family: LLG Type Regular;
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	white-space:nowrap;
+}
+
+span.underline {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+span.boldline {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
